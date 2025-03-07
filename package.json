@@ -8,8 +8,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"postinstall": "prisma generate"
@@ -63,5 +63,8 @@
 		"pdfjs-dist": "^4.10.38",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^3.0.2"
+	},
+	"engines": {
+		"node": ">=18.0.0"
 	}
 }
